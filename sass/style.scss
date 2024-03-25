@@ -1,0 +1,35 @@
+@use "sass:math";
+
+/// Converts PX to REM
+/// @access public
+/// @param {string} $size - Value to be converted in PX.
+/// @returns {string} - Returns REM string.
+/// @example font-size: rem(24px);
+/// @returns font-size: 1.5rem;
+@function rem($size) {
+  $remSize: math.div($size, 16px);
+  @return #{$remSize}rem;
+}
+// We will needs tints / shades for primary color
+// https://maketintsandshades.com/#2ab2af
+$primary: #2ab2af;
+$accent: rgb(192, 223, 52);
+$gray-tint: rgb(229, 239, 245);
+$gray-shade: rgb(152, 166, 189);
+
+$fs-normal: rem(16px);
+
+$fw-normal: 400;
+$fw-bold: 700;
+
+/* Typography Scale */
+/*  
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* ******************** */
+/* Spaces */
+/* ******************** */
+/* 
+  2 / 4 / 8 / 12 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
