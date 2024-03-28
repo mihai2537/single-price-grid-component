@@ -129,7 +129,24 @@ body {
 
 .cta-text {
   color: $gray-tint;
-  margin-bottom: rem(24px);
+  margin-bottom: 30px;
+}
+
+.cta-link:link,
+.cta-link:visited {
+  display: block;
+  text-align: center;
+  padding-block: rem(16px);
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+  background-color: $accent;
+  color: white;
+
+  text-decoration: none;
+}
+
+.cta-link:hover,
+.cta-link:active {
 }
 
 .about {

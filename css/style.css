@@ -98,7 +98,19 @@ body {
 
 .cta-text {
   color: rgb(229, 239, 245);
-  margin-bottom: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-link:link,
+.cta-link:visited {
+  display: block;
+  text-align: center;
+  padding-block: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: rgb(192, 223, 52);
+  color: white;
+  text-decoration: none;
 }
 
 .about {
