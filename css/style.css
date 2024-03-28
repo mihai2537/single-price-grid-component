@@ -6,7 +6,7 @@
 /* Spaces */
 /* ******************** */
 /* 
-  2 / 4 / 8 / 12 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 * {
   padding: 0;
@@ -22,23 +22,90 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  padding: 0 0.9375rem;
 }
 
-.container {
-  max-width: 42.375rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-  background-color: red;
-}
-
-.grid {
+.grid-component {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 42.375rem;
+  margin: 0 auto;
 }
 
+/* Typography Scale */
+/*  
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/* ******************** */
+/* Spaces */
+/* ******************** */
+/* 
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
 .header {
   grid-column: 1/-1;
+  background-color: white;
+  padding-inline: 3rem;
+  padding-block: 3rem;
+}
+
+.header-title {
+  color: #2ab2af;
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.header-subtitle {
+  color: rgb(192, 223, 52);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.header-body {
+  line-height: 1.5;
+}
+
+.cta {
+  padding-inline: 3rem;
+  padding-block: 3rem;
+  background-color: #2ab2af;
+  color: white;
+}
+
+.cta-title {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  color: rgb(229, 239, 245);
+  font-weight: 700;
+}
+
+.price {
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.duration {
+  font-size: 1rem;
+  color: rgb(229, 239, 245);
+}
+
+.cta-text {
+  color: rgb(229, 239, 245);
+  margin-bottom: 1.5rem;
+}
+
+.about {
+  padding-inline: 3rem;
+  padding-block: 3rem;
+  background-color: #55c1bf;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
