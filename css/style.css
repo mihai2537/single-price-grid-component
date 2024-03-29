@@ -76,18 +76,20 @@ body {
   padding-block: 3rem;
   background-color: #2ab2af;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cta-title {
-  margin-bottom: 1rem;
   font-size: 1.125rem;
   color: rgb(229, 239, 245);
   font-weight: 700;
 }
 
 .price {
+  margin-bottom: 0.25rem;
   font-size: 1.875rem;
-  margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
@@ -98,26 +100,38 @@ body {
 
 .cta-text {
   color: rgb(229, 239, 245);
-  margin-bottom: 30px;
 }
 
 .cta-link:link,
 .cta-link:visited {
-  display: block;
   text-align: center;
   padding-block: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
   background-color: rgb(192, 223, 52);
   color: white;
-  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .about {
   padding-inline: 3rem;
   padding-block: 3rem;
   background-color: #55c1bf;
-  color: white;
+  color: rgb(229, 239, 245);
+}
+
+.about-title {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.about-list {
+  list-style-type: none;
+}
+
+.about-list-item {
+  margin-bottom: 0.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -107,18 +107,21 @@ body {
   padding-block: rem(48px);
   background-color: $primary;
   color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cta-title {
-  margin-bottom: rem(16px);
   font-size: rem(18px);
   color: $gray-tint;
   font-weight: $fw-bold;
 }
 
 .price {
+  margin-bottom: rem(4px);
   font-size: rem(30px);
-  margin-bottom: rem(8px);
   font-weight: $fw-bold;
 }
 
@@ -129,20 +132,19 @@ body {
 
 .cta-text {
   color: $gray-tint;
-  margin-bottom: 30px;
 }
 
 .cta-link:link,
 .cta-link:visited {
-  display: block;
   text-align: center;
   padding-block: rem(16px);
-  border-radius: 6px;
-  box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+  text-decoration: none;
+
   background-color: $accent;
   color: white;
 
-  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
 }
 
 .cta-link:hover,
@@ -153,5 +155,19 @@ body {
   padding-inline: rem(48px);
   padding-block: rem(48px);
   background-color: #55c1bf;
-  color: white;
+  color: $gray-tint;
+}
+
+.about-title {
+  margin-bottom: rem(16px);
+  font-size: rem(18px);
+  font-weight: $fw-bold;
+}
+
+.about-list {
+  list-style-type: none;
+}
+
+.about-list-item {
+  margin-bottom: rem(4px);
 }
