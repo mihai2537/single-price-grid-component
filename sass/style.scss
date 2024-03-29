@@ -23,6 +23,8 @@ $fs-normal: rem(16px);
 $fw-normal: 400;
 $fw-bold: 700;
 
+$p-normal: rem(32px);
+
 /* Typography Scale */
 /*  
   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
@@ -56,7 +58,7 @@ body {
 .grid-component {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1.2fr;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
@@ -80,8 +82,8 @@ body {
 .header {
   grid-column: 1/-1;
   background-color: white;
-  padding-inline: rem(48px);
-  padding-block: rem(48px);
+  padding-inline: $p-normal;
+  padding-block: $p-normal;
 }
 
 .header-title {
@@ -103,8 +105,8 @@ body {
 }
 
 .cta {
-  padding-inline: rem(48px);
-  padding-block: rem(48px);
+  padding-inline: $p-normal;
+  padding-block: $p-normal;
   background-color: $primary;
   color: white;
 
@@ -137,7 +139,7 @@ body {
 .cta-link:link,
 .cta-link:visited {
   text-align: center;
-  padding-block: rem(16px);
+  padding-block: rem(12px);
   text-decoration: none;
 
   background-color: $accent;
@@ -152,8 +154,8 @@ body {
 }
 
 .about {
-  padding-inline: rem(48px);
-  padding-block: rem(48px);
+  padding-inline: $p-normal;
+  padding-block: $p-normal;
   background-color: #55c1bf;
   color: $gray-tint;
 }
