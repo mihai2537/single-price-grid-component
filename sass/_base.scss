@@ -1,0 +1,136 @@
+/* Typography Scale */
+/*  
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* ******************** */
+/* Spaces */
+/* ******************** */
+/* 
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main, sans-serif;
+  font-size: $fs-normal;
+  font-weight: $fw-normal;
+  color: $gray-shade;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  padding: rem(15px) rem(15px);
+}
+
+.grid-component {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.2fr;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+
+  max-width: rem(678px);
+  margin: 0 auto;
+}
+
+.header {
+  grid-column: 1/-1;
+  background-color: white;
+  padding-inline: $p-normal;
+  padding-block: $p-normal;
+}
+
+.header-title {
+  color: $primary;
+  font-size: $fs-title;
+  font-weight: $fw-bold;
+  margin-bottom: rem(32px);
+}
+
+.header-subtitle {
+  color: $accent;
+  font-size: $fs-subtitle;
+  font-weight: $fw-bold;
+  margin-bottom: rem(16px);
+}
+
+.header-body {
+  line-height: 1.5;
+}
+
+.cta {
+  padding-inline: $p-normal;
+  padding-block: $p-normal;
+  background-color: $primary;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cta-title {
+  font-size: $fs-subtitle;
+  color: $gray-tint;
+  font-weight: $fw-bold;
+}
+
+.price {
+  margin-bottom: rem(4px);
+  font-size: $fs-title;
+  font-weight: $fw-bold;
+}
+
+.duration {
+  font-size: $fs-normal;
+  color: $gray-tint;
+}
+
+.cta-text {
+  color: $gray-tint;
+}
+
+.cta-link:link,
+.cta-link:visited {
+  text-align: center;
+  padding-block: rem(12px);
+  text-decoration: none;
+
+  background-color: $accent;
+  color: white;
+
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+}
+
+.cta-link:hover,
+.cta-link:active {
+}
+
+.about {
+  padding-inline: $p-normal;
+  padding-block: $p-normal;
+  background-color: #55c1bf;
+  color: $gray-tint;
+}
+
+.about-title {
+  margin-bottom: rem(16px);
+  font-size: $fs-subtitle;
+  font-weight: $fw-bold;
+}
+
+.about-list {
+  list-style-type: none;
+}
+
+.about-list-item {
+  margin-bottom: rem(4px);
+}

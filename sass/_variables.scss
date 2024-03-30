@@ -1,0 +1,35 @@
+@use "sass:math";
+
+/// Converts PX to REM
+/// @access public
+/// @param {string} $size - Value to be converted in PX.
+/// @returns {string} - Returns REM string.
+/// @example font-size: rem(24px);
+/// @returns font-size: 1.5rem;
+@function rem($size) {
+  $remSize: math.div($size, 16px);
+  @return #{$remSize}rem;
+}
+// We will needs tints / shades for primary color
+// https://maketintsandshades.com/#2ab2af
+$primary: #2ab2af;
+$accent: rgb(192, 223, 52);
+$gray-tint: rgb(229, 239, 245);
+$gray-shade: rgb(152, 166, 189);
+
+$font-main: "Karla";
+$fs-normal: rem(16px);
+$fs-title: rem(30px);
+$fs-subtitle: rem(18px);
+
+$fw-normal: 400;
+$fw-bold: 700;
+
+$p-normal: rem(32px);
+
+// This is not working, I should have used css variables
+// @media (max-width: rem(380px)) {
+//   $fs-title: rem(24px);
+//   $fs-subtitle: rem(16px);
+//   $fs-normal: rem(14px);
+// }
